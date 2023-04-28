@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoRest {
 
 
-    @Autowired
-    private RestTemplateService restTemplateService;
-
     @GetMapping("/alive")
     ResponseEntity<?> test(){
         return  ResponseEntity.ok("Hello world");
