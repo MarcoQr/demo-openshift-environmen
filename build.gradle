@@ -6,20 +6,20 @@ plugins {
 
 
 repositories {
-    maven {
-        url 'https://nexus-cicd.apps.monex-dev.southcentralus.aroapp.io/repository/nueva-bancadigital-group/'
-        credentials {
-            username System.getenv('NEXUS_username')
-            password System.getenv('NEXUS_password')
-        }
-    }
+//    maven {
+//        url 'https://nexus-cicd.apps.monex-dev.southcentralus.aroapp.io/repository/nueva-bancadigital-group/'
+//        credentials {
+//            username System.getenv('NEXUS_username')
+//            password System.getenv('NEXUS_password')
+//        }
+//    }
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation("mx.com.monex:monex-bdm-commons:1.0.0-SNAPSHOT@jar")
+//    implementation("mx.com.monex:monex-bdm-commons:1.0.0-SNAPSHOT@jar")
 }
 
 tasks.named('test') {
